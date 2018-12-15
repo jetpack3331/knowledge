@@ -30,7 +30,7 @@ pipelines:
 ```
 
 In this i'm using the content of the version.txt as a information in the APP to display the build version.
-So it's up to you to leave it, change it or remote it.
+So it's up to you to leave it, change it or remove it.
 
 
 deploy.sh file looks like:
@@ -40,7 +40,7 @@ echo "Deploy script started"
 cd <path_to_web_app>
 sh pull.sh
 echo "Deploy script finished execution"
-``
+```
 
 pull.sh file looks like:
 
@@ -49,6 +49,6 @@ git fetch --all
 git reset --hard origin/master # to reset all manual changes on the server ;)
 ## ... do some stuff what you need
 echo "Deploy finished"
-``
+```
 
 
